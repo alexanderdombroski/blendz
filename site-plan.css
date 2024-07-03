@@ -191,3 +191,20 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.wireframe img {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 700px) {
+  .wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .wireframe div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
