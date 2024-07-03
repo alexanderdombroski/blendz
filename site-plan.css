@@ -15,7 +15,7 @@ Fonts are separated by a | */
   --secondary-color: #00ABBD;
   --accent1-color: #FF9933;
   --accent2-color: #EEF8FF;
-  --accent3-color: #5f3600;
+  /* --accent3-color: #5f3600; */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Playwrite DE Grund", georgia, serif;
@@ -92,7 +92,7 @@ p {
   background-color: #999;
 }
 .colors td {
-  width: 20%;
+  width: 25%;
   height: 3em;
 }
 
