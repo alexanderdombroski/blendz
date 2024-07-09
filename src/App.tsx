@@ -1,14 +1,13 @@
 import React from 'react';
 import './styles/App.css';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <header className="App-header">
-        <img src="" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <img src={`${process.env.PUBLIC_URL}/images/logo-transparent.png`} className="App-logo" alt="logo" />
         <a
           className="App-link"
           href="https://reactjs.org"

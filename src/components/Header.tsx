@@ -1,10 +1,9 @@
 import React from "react";
-import "./styles/header.css"
 
 function Header() {
     return (
         <header>
-            <img className="logo" src="" alt="Blendz Logo"/>
+            <a className="logo" href={`${process.env.PUBLIC_URL}/index.html`}><img src={`${process.env.PUBLIC_URL}/images/logo-transparent.png`} alt="Blendz Logo"/></a>
             <Nav/>
         </header>
     );
@@ -14,10 +13,10 @@ function Nav() {
     return (
         <nav>
             <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="#"></a>Contact Us</li>
-                <li><a href="#"></a>About Us</li>
-                <li><a href="site-plan.html"></a>Site Plan</li>
+                <li><a href={`${process.env.PUBLIC_URL}/index.html`}>Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href={`${process.env.PUBLIC_URL}/site-plan.html`}>Site Plan</a></li>
             </ul>
         </nav>
     );

@@ -1,178 +1,178 @@
 {
-  "ingredients": [
+  "ingredient": [
     {
       "name": "Acai",
-      "image": "acai.png",
+      "image": "images/ingredient/acai.png",
       "costPerUnit": 1.5
     },
     {
       "name": "Apricot",
-      "image": "apricot.png",
+      "image": "images/ingredient/apricot.png",
       "costPerUnit": 1.2
     },
     {
       "name": "Avocado",
-      "image": "avocado.png",
+      "image": "images/ingredient/avocado.png",
       "costPerUnit": 2.0
     },
     {
       "name": "Bananas",
-      "image": "bananas.png",
+      "image": "images/ingredient/bananas.png",
       "costPerUnit": 0.5
     },
     {
       "name": "Blueberry",
-      "image": "blueberry.png",
+      "image": "images/ingredient/blueberry.png",
       "costPerUnit": 2.5
     },
     {
       "name": "Carrot",
-      "image": "carrot.png",
+      "image": "images/ingredient/carrot.png",
       "costPerUnit": 0.7
     },
     {
       "name": "Celery",
-      "image": "celery.png",
+      "image": "images/ingredient/celery.png",
       "costPerUnit": 0.8
     },
     {
       "name": "Coconut",
-      "image": "coconut.png",
+      "image": "images/ingredient/coconut.png",
       "costPerUnit": 1.8
     },
     {
       "name": "Cucumber",
-      "image": "cucumber.png",
+      "image": "images/ingredient/cucumber.png",
       "costPerUnit": 0.9
     },
     {
       "name": "Date Fruit",
-      "image": "date-fruit.png",
+      "image": "images/ingredient/date-fruit.png",
       "costPerUnit": 2.0
     },
     {
       "name": "Dragon Fruit",
-      "image": "dragon-fruit.png",
+      "image": "images/ingredient/dragon-fruit.png",
       "costPerUnit": 3.0
     },
     {
       "name": "Ginger",
-      "image": "ginger.png",
+      "image": "images/ingredient/ginger.png",
       "costPerUnit": 1.0
     },
     {
       "name": "Grape",
-      "image": "grape.png",
+      "image": "images/ingredient/grape.png",
       "costPerUnit": 2.2
     },
     {
       "name": "Guava",
-      "image": "guava.png",
+      "image": "images/ingredient/guava.png",
       "costPerUnit": 1.5
     },
     {
       "name": "Kale",
-      "image": "kale.png",
+      "image": "images/ingredient/kale.png",
       "costPerUnit": 1.3
     },
     {
       "name": "Kiwi",
-      "image": "kiwi.png",
+      "image": "images/ingredient/kiwi.png",
       "costPerUnit": 1.0
     },
     {
       "name": "Lemon",
-      "image": "lemon.png",
+      "image": "images/ingredient/lemon.png",
       "costPerUnit": 0.6
     },
     {
       "name": "Lime",
-      "image": "lime.png",
+      "image": "images/ingredient/lime.png",
       "costPerUnit": 0.5
     },
     {
       "name": "lychee",
-      "image": "lychee.png",
+      "image": "images/ingredient/lychee.png",
       "costPerUnit": 2.5
     },
     {
       "name": "mango",
-      "image": "mango.png",
+      "image": "images/ingredient/mango.png",
       "costPerUnit": 1.8
     },
     {
       "name": "mangosteen",
-      "image": "mangosteen.png",
+      "image": "images/ingredient/mangosteen.png",
       "costPerUnit": 3.0
     },
     {
       "name": "mint",
-      "image": "mint.png",
+      "image": "images/ingredient/mint.png",
       "costPerUnit": 0.7
     },
     {
       "name": "onion",
-      "image": "onion.png",
+      "image": "images/ingredient/onion.png",
       "costPerUnit": 0.4
     },
     {
       "name": "orange",
-      "image": "orange.png",
+      "image": "images/ingredient/orange.png",
       "costPerUnit": 0.8
     },
     {
       "name": "papaya",
-      "image": "papaya.png",
+      "image": "images/ingredient/papaya.png",
       "costPerUnit": 1.5
     },
     {
       "name": "passion Fruit",
-      "image": "passion-fruit.png",
+      "image": "images/ingredient/passion-fruit.png",
       "costPerUnit": 2.0
     },
     {
       "name": "peach",
-      "image": "peach.png",
+      "image": "images/ingredient/peach.png",
       "costPerUnit": 1.2
     },
     {
       "name": "pear",
-      "image": "pear.png",
+      "image": "images/ingredient/pear.png",
       "costPerUnit": 1.0
     },
     {
       "name": "pineapple",
-      "image": "pineapple.png",
+      "image": "images/ingredient/pineapple.png",
       "costPerUnit": 2.0
     },
     {
       "name": "raspberry",
-      "image": "raspberry.png",
+      "image": "images/ingredient/raspberry.png",
       "costPerUnit": 2.5
     },
     {
       "name": "soursop",
-      "image": "soursop.png",
+      "image": "images/ingredient/soursop.png",
       "costPerUnit": 2.8
     },
     {
       "name": "spinach",
-      "image": "spinach.png",
+      "image": "images/ingredient/spinach.png",
       "costPerUnit": 1.0
     },
     {
       "name": "strawberry",
-      "image": "strawberry.png",
+      "image": "images/ingredient/strawberry.png",
       "costPerUnit": 2.0
     },
     {
       "name": "sweetsop",
-      "image": "sweetsop.png",
+      "image": "images/ingredient/sweetsop.png",
       "costPerUnit": 3.0
     },
     {
       "name": "watermelon",
-      "image": "watermelon.png",
+      "image": "images/ingredient/watermelon.png",
       "costPerUnit": 1.5
     }
   ]
