@@ -16,3 +16,9 @@ const firebaseApp = initializeApp({
   
 const db = getFirestore(firebaseApp);
 
+function writeData(): void {
+    const data = db.toJSON();
+    console.log(data);
+}
+
+export default writeData;
