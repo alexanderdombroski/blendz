@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
 import './styles/styles.css';
 import App from './App';
 import reportWebVitals from './scripts/reportWebVitals';
 
-import writeData from './scripts/database';
+// import writeData from './scripts/database';
 
 
 const root = ReactDOM.createRoot(
@@ -17,7 +16,7 @@ root.render(
   </React.StrictMode>
 );
 
-writeData();
+// writeData();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

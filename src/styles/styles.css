@@ -40,7 +40,13 @@ p {
     text-align: left;
 }
 
+a {
+    text-decoration: none;
+}
 
+a:visited {
+    color: unset;
+}
 
 /* -------------------- Header -------------------- */
 
@@ -53,11 +59,12 @@ nav {
     width: 100%;
 }
 
+
 nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -76,16 +83,64 @@ nav li {
     width: 100%;
 }
 
+nav a, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+
+
 
 /* -------------------- Main -------------------- */
 
 
 
 
+
+
 /* -------------------- Footer -------------------- */
+
+footer {
+    background-color: var(--nav-background-color);
+}
+
+footer p, footer a, footer a:visited {
+    color: var(--paragraph-color-on-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a:hover {
+    color: var(--accent1-color);
+}
+
+.social-btn {
+    padding: 20px;
+    border: white solid 2px;
+    border-radius: 50%;
+}
+
+.social-btn:hover {
+    border-color: var(--accent1-color);
+}
+
+/* -------------------- Medium View -------------------- */
 
 @media screen and (min-width: 560px) {
     nav ul {
         flex-direction: row;
+        justify-content: left;
+
+    }
+    nav a {
+        padding: 40px 20px;
     }
 }
