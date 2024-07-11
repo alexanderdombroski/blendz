@@ -48,6 +48,14 @@ a:visited {
     color: unset;
 }
 
+a:hover {
+    color: var(--accent1-color);
+}
+
+img {
+    width: 100%;
+}
+
 /* -------------------- Header -------------------- */
 
 header {
@@ -88,18 +96,8 @@ nav a, nav a:visited {
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    color: var(--nav-hover-link-color);
 }
-
-
-
-
-/* -------------------- Main -------------------- */
-
-
-
-
-
 
 /* -------------------- Footer -------------------- */
 
@@ -111,6 +109,11 @@ footer p, footer a, footer a:visited {
     color: var(--paragraph-color-on-color);
 }
 
+footer a:hover {
+    color: var(--nav-hover-link-color);
+    text-decoration: underline;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -118,19 +121,63 @@ footer {
     padding: 20px;
 }
 
-footer a:hover {
-    color: var(--accent1-color);
-}
-
 .social-btn {
-    padding: 20px;
+    padding: 10px;
     border: white solid 2px;
     border-radius: 50%;
 }
 
 .social-btn:hover {
+    border-color: var(--accent2-color);
+}
+
+/* -------------------- Home -------------------- */
+
+.App {
+    background-color: var(--accent2-color);
+}
+
+.hero {
+    position: relative;
+    display: inline-block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.page-summary {
+    width: 60%;
+    height: 100px;
+    margin: 75px 0;
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page-summary:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    margin-left: 40%;
+}
+
+.page-summary a {
+    padding: 5px;
+    border: solid var(--accent2-color) 1px;
+    border-radius: 4px;
+}
+
+.page-summary a:hover {
     border-color: var(--accent1-color);
 }
+
+
+
 
 /* -------------------- Medium View -------------------- */
 

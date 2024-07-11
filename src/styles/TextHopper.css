@@ -1,0 +1,18 @@
+.wave-word {
+    display: inline-block;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.wave-animate {
+    display: inline-block;
+    animation: wave 1s;
+    animation-delay: calc(var(--index) * 0.1s);
+}
