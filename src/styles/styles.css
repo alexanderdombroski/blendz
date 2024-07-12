@@ -167,6 +167,7 @@ footer {
 }
 
 .page-summary a {
+    color: var(--accent2-color);
     padding: 5px;
     border: solid var(--accent2-color) 1px;
     border-radius: 4px;
