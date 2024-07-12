@@ -44,9 +44,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: unset;
-}
 
 a:hover {
     color: var(--accent1-color);
@@ -175,6 +172,7 @@ footer {
 
 .page-summary a:hover {
     border-color: var(--accent1-color);
+    color: var(--accent1-color);
 }
 
 
