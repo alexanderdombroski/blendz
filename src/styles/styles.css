@@ -44,7 +44,6 @@ a {
     text-decoration: none;
 }
 
-
 a:hover {
     color: var(--accent1-color);
 }
@@ -52,6 +51,7 @@ a:hover {
 img {
     width: 100%;
 }
+
 
 /* -------------------- Header -------------------- */
 
@@ -203,6 +203,33 @@ footer a:hover {
     color: var(--accent1-color);
 }
 
+/* -------------------- Menu Page -------------------- */
+
+.menu-bar ul {
+    background-color: var(--paragraph-background-color);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-bar button {
+    margin: 50px;
+}
+
+.ingredients {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.ingredient {
+    border: 4px var(--accent2-color) solid;
+}
+
+.ingredient img {
+    width: 100px;
+}
 
 
 
