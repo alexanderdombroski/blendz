@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 
 // import writeData from './scripts/database';
 
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
