@@ -33,7 +33,7 @@ class WordCycler extends Component<WordCyclerArgs, WordCyclerState> {
         }), () => {
             setTimeout(() => {
                 this.setState({ canAnimate: true });
-            }, 3000);
+            }, 4000);
             this.animate();
         });
     }
@@ -43,7 +43,7 @@ class WordCycler extends Component<WordCyclerArgs, WordCyclerState> {
         spans?.forEach(span => {
             span.classList.add('wave-animate');
             // Remove the className after the animation duration to reset
-            setTimeout(() => span.classList.remove('wave-animate'), 3000);
+            setTimeout(() => span.classList.remove('wave-animate'), 4000);
         });
     }
 

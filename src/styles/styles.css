@@ -125,7 +125,7 @@ footer {
 }
 
 .social-btn:hover {
-    border-color: var(--accent2-color);
+    border-color: var(--accent1-color);
 }
 
 /* -------------------- Home -------------------- */
@@ -188,5 +188,17 @@ footer {
     }
     nav a {
         padding: 40px 20px;
+    }
+}
+
+
+/* -------------------- Large View -------------------- */
+
+@media screen and (min-width: 1000px) {
+    main {
+        margin: 0 20%;
+    }
+    .hero img {
+        width: 100%;
     }
 }
