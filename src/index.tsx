@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/styles.css';
 import App from './App';
 import reportWebVitals from './scripts/reportWebVitals';
+import MenuPage from './MenuPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // import writeData from './scripts/database';
 
@@ -12,7 +16,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <Router>
+      <Routes>
+        <Route path="/" Component={App} />
+        <Route path="/menu" Component={MenuPage} />
+      </Routes>
+    </Router>
+    <Footer/>
   </React.StrictMode>
 );
 

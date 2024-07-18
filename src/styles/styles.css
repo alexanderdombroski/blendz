@@ -142,7 +142,7 @@ footer a:hover {
 }
 
 .social-popup {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
