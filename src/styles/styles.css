@@ -11,7 +11,7 @@
   --secondary-color: #00ABBD;
   --accent1-color: #FF9933;
   --accent2-color: #EEF8FF;
-  /* --accent3-color: #5f3600; */
+  --accent3-color: #5f3600;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Playwrite DE Grund", georgia, serif;
@@ -52,6 +52,13 @@ img {
     width: 100%;
 }
 
+body, #root {
+    background-color: var(--accent2-color);
+}
+
+li {
+    list-style-type: none;
+}
 
 /* -------------------- Header -------------------- */
 
@@ -74,10 +81,6 @@ nav ul {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-nav li {
-    list-style-type: none;
 }
 
 .logo {
@@ -203,7 +206,7 @@ footer a:hover {
     color: var(--accent1-color);
 }
 
-/* -------------------- Menu Page -------------------- */
+/* ---------------------------------------- Menu Page ---------------------------------------- */
 
 .menu-bar ul {
     background-color: var(--paragraph-background-color);
@@ -214,22 +217,41 @@ footer a:hover {
 }
 
 .menu-bar button {
-    margin: 50px;
+    margin: 50px; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--accent3-color);
+    color: var(--headline-color-on-color);
+    font-size: 1rem;
 }
 
-.ingredients {
+.menu-bar button:hover {
+    color: var(--nav-hover-link-color);
+}
+
+.ingredients, .smoothies {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.ingredient {
+.ingredients {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.smoothies {
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
     border: 4px var(--accent2-color) solid;
 }
 
-.ingredient img {
+.card img {
     width: 100px;
 }
+
+
+
 
 
 

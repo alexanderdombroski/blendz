@@ -1,112 +1,122 @@
 [
     {
+        "id": 1,
         "name": "Strawberry Banana Smoothie",
         "image": "images/smoothie/strawberry-banana-smoothie.png",
         "ingredients": ["Banana", "Strawberries", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 17.5,
         "cost": {
-            "8 oz": 4.00,
-            "12 oz": 5.75,
-            "20 oz": 8.00
+            "8oz": 4.00,
+            "12oz": 5.75,
+            "20oz": 8.00
         }
     },
     {
+        "id": 2,
         "name": "Green Smoothie",
         "image": "images/smoothie/avocado-spinach-smoothie.jpg",
         "ingredients": ["Spinach", "Kale", "Banana", "Apple", "Almond Milk", "Chia Seeds"],
         "averageCaloriesPerOz": 15,
         "cost": {
-            "8 oz": 4.25,
-            "12 oz": 5.75,
-            "20 oz": 8.00
+            "8oz": 4.25,
+            "12oz": 5.75,
+            "20oz": 8.00
         }
     },
     {
+        "id": 3,
         "name": "Berry Blast Smoothie",
-        "image": "images/smoothie/blackberry-apple.jpeg",
+        "image": "images/smoothie/blackberry-apple.jpg",
         "ingredients": ["Mixed Berries", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 16,
         "cost": {
-            "8 oz": 4.00,
-            "12 oz": 5.75,
-            "20 oz": 8.00
+            "8oz": 4.00,
+            "12oz": 5.75,
+            "20oz": 8.00
         }
     },
     {
+        "id": 4,
         "name": "Mango Pineapple Smoothie",
         "image": "images/smoothie/mango-smoothie.jpg",
         "ingredients": ["Mango", "Pineapple", "Greek Yogurt", "Orange Juice", "Honey"],
         "averageCaloriesPerOz": 18,
         "cost": {
-            "8 oz": 4.50,
-            "12 oz": 6.25,
-            "20 oz": 9.00
+            "8oz": 4.50,
+            "12oz": 6.25,
+            "20oz": 9.00
         }
     },
     {
+        "id": 5,
         "name": "Tropical Smoothie",
         "image": "images/smoothie/banana-pineapple-tropical-smoothie.jpg",
         "ingredients": ["Mango", "Pineapple", "Banana", "Coconut Milk", "Orange Juice"],
         "averageCaloriesPerOz": 18.5,
         "cost": {
-            "8 oz": 4.50,
-            "12 oz": 6.25,
-            "20 oz": 9.00
+            "8oz": 4.50,
+            "12oz": 6.25,
+            "20oz": 9.00
         }
     },
     {
+        "id": 6,
         "name": "Avocado Smoothie",
         "image": "images/smoothie/avocado-banana-smoothie.webp",
         "ingredients": ["Avocado", "Banana", "Spinach", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 20,
         "cost": {
-            "8 oz": 5.00,
-            "12 oz": 6.50,
-            "20 oz": 10.00
+            "8oz": 5.00,
+            "12oz": 6.50,
+            "20oz": 10.00
         }
     },
     {
+        "id": 7,
         "name": "Peanut Butter Banana Smoothie",
         "image": "images/smoothie/banana-smoothie.jpeg",
         "ingredients": ["Banana", "Peanut Butter", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 22.5,
         "cost": {
-            "8 oz": 5.00,
-            "12 oz": 6.50,
-            "20 oz": 10.00
+            "8oz": 5.00,
+            "12oz": 6.50,
+            "20oz": 10.00
         }
     },
     {
+        "id": 8,
         "name": "Chocolate Banana Smoothie",
         "image": "images/smoothie/chocolate-pb-banana-smoothie.jpg",
         "ingredients": ["Banana", "Peanut Butter", "Cocoa Powder", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 20,
         "cost": {
-            "8 oz": 4.50,
-            "12 oz": 6.25,
-            "20 oz": 9.00
+            "8oz": 4.50,
+            "12oz": 6.25,
+            "20oz": 9.00
         }
     },
     {
+        "id": 9,
         "name": "Blueberry Acai Smoothie",
         "image": "images/smoothie/blueberry-smoothie.webp",
         "ingredients": ["Blueberries", "Acai Puree", "Banana", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 18,
         "cost": {
-            "8 oz": 4.50,
-            "12 oz": 6.25,
-            "20 oz": 9.00
+            "8oz": 4.50,
+            "12oz": 6.25,
+            "20oz": 9.00
         }
     },
     {
+        "id": 10,
         "name": "Carrot Orange Smoothie",
         "image": "images/smoothie/smoothie-orange.jpg",
         "ingredients": ["Carrot", "Orange", "Banana", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 15.5,
         "cost": {
-            "8 oz": 4.00,
-            "12 oz": 5.75,
-            "20 oz": 8.00
+            "8oz": 4.00,
+            "12oz": 5.75,
+            "20oz": 8.00
         }
     }
 ]
