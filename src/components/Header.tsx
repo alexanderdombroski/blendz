@@ -15,7 +15,7 @@ function Nav() {
             <ul>
                 <li><a href={`${process.env.PUBLIC_URL}/`}>Home</a></li>
                 <li><a href={`${process.env.PUBLIC_URL}/menu`}>Menu</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href={`${process.env.PUBLIC_URL}/about`}>About Us</a></li>
                 <li><a href={`${process.env.PUBLIC_URL}/site-plan.html`}>Site Plan</a></li>
             </ul>
         </nav>

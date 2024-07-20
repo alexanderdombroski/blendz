@@ -7,6 +7,7 @@ import reportWebVitals from './scripts/reportWebVitals';
 import MenuPage from './MenuPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AboutPage from './AboutPage';
 
 // import writeData from './scripts/database';
 
@@ -20,6 +21,7 @@ root.render(
       <Routes>
         <Route path="/" Component={App} />
         <Route path="/menu" Component={MenuPage} />
+        <Route path="/menu" Component={AboutPage} />
       </Routes>
     </Router>
     <Footer/>
