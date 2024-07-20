@@ -1,3 +1,4 @@
+import Counter from "./Counter"
 
 interface ingredient {
     id: number,
@@ -12,7 +13,7 @@ function ingredientCard(ingredient: ingredient) {
         <div className="card" key={ingredient["id"]} onClick={(event) => addBorder(event)}>
             <h3>{ingredient["name"]}</h3>
             <img src={`${process.env.PUBLIC_URL}${ingredient["image"]}`} alt={ingredient["name"]} />
-            <h3>{ingredient["calories"]}</h3>
+            <h3>{ingredient["calories"]} cal</h3>
             <h3>${ingredient["costPerUnit"].toFixed(2)}</h3>
         </div>
     );
@@ -25,23 +26,30 @@ interface smoothie {
     ingredients: string[],
     averageCaloriesPerOz: number,
     cost: {
-        "8oz": number
-        "12oz": number
-        "20oz": number
+        "8": number
+        "12": number
+        "20": number
     }
 }
 
 
 function smoothieCard(smoothie: smoothie) {
     return (
-        <div className="card" key={smoothie["id"]} onClick={(event) => addBorder(event)}>
+        <div className="card" key={smoothie["id"]}>
             <h3>{smoothie["name"]}</h3>
             <img src={`${process.env.PUBLIC_URL}${smoothie["image"]}`} alt={smoothie["name"]} />
-            <h3>{smoothie["averageCaloriesPerOz"]}</h3>
             <ul>
-                {Object.entries(smoothie.cost).map(([k, v]) => <li>{k}: ${v.toFixed(2)}</li>)}
+                {
+                    Object.entries(smoothie.cost).map(([k, v]) => 
+                        <li key={k}>
+                            <b>{k} oz: </b> ${v.toFixed(2)}  ({Number.parseInt(k)*smoothie["averageCaloriesPerOz"]} cal)
+                            <Counter/>
+                        </li>
+                    )
+                }
             </ul>
         </div>
+        
     );
 }
 
