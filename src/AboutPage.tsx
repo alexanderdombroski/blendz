@@ -14,7 +14,7 @@ function AboutPage() {
             
             <img src={`${process.env.PUBLIC_URL}/images/restaurant.jpg`} alt="" />
 
-            <h2>Address</h2>
+            <h3>Address</h3>
             <div className="address">
                 <p>123 Main Street<br/>Idaho Falls, ID 83402</p>
             </div>
