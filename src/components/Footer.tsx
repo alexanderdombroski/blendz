@@ -40,7 +40,7 @@ function ToggleSocials() {
     if (socials === null) {
         console.error("Footer not loaded correcty, couldn't find social button")
     } else {
-        socials.style.display = socials.style.display === "none" ? "flex" : "none"
+        socials.style.display = socials.style.display === "flex" ? "none" : "flex"
     }
 }
 
