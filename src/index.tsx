@@ -21,7 +21,7 @@ root.render(
       <Routes>
         <Route path="/" Component={App} />
         <Route path="/menu" Component={MenuPage} />
-        <Route path="/menu" Component={AboutPage} />
+        <Route path="/about" Component={AboutPage} />
       </Routes>
     </Router>
     <Footer/>
