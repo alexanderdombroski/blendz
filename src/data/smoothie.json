@@ -6,9 +6,9 @@
         "ingredients": ["Banana", "Strawberries", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 17.5,
         "cost": {
-            "8oz": 4.00,
-            "12oz": 5.75,
-            "20oz": 8.00
+            "8": 4.00,
+            "12": 5.75,
+            "20": 8.00
         }
     },
     {
@@ -18,9 +18,9 @@
         "ingredients": ["Spinach", "Kale", "Banana", "Apple", "Almond Milk", "Chia Seeds"],
         "averageCaloriesPerOz": 15,
         "cost": {
-            "8oz": 4.25,
-            "12oz": 5.75,
-            "20oz": 8.00
+            "8": 4.25,
+            "12": 5.75,
+            "20": 8.00
         }
     },
     {
@@ -30,9 +30,9 @@
         "ingredients": ["Mixed Berries", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 16,
         "cost": {
-            "8oz": 4.00,
-            "12oz": 5.75,
-            "20oz": 8.00
+            "8": 4.00,
+            "12": 5.75,
+            "20": 8.00
         }
     },
     {
@@ -42,9 +42,9 @@
         "ingredients": ["Mango", "Pineapple", "Greek Yogurt", "Orange Juice", "Honey"],
         "averageCaloriesPerOz": 18,
         "cost": {
-            "8oz": 4.50,
-            "12oz": 6.25,
-            "20oz": 9.00
+            "8": 4.50,
+            "12": 6.25,
+            "20": 9.00
         }
     },
     {
@@ -54,9 +54,9 @@
         "ingredients": ["Mango", "Pineapple", "Banana", "Coconut Milk", "Orange Juice"],
         "averageCaloriesPerOz": 18.5,
         "cost": {
-            "8oz": 4.50,
-            "12oz": 6.25,
-            "20oz": 9.00
+            "8": 4.50,
+            "12": 6.25,
+            "20": 9.00
         }
     },
     {
@@ -66,9 +66,9 @@
         "ingredients": ["Avocado", "Banana", "Spinach", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 20,
         "cost": {
-            "8oz": 5.00,
-            "12oz": 6.50,
-            "20oz": 10.00
+            "8": 5.00,
+            "12": 6.50,
+            "20": 10.00
         }
     },
     {
@@ -78,9 +78,9 @@
         "ingredients": ["Banana", "Peanut Butter", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 22.5,
         "cost": {
-            "8oz": 5.00,
-            "12oz": 6.50,
-            "20oz": 10.00
+            "8": 5.00,
+            "12": 6.50,
+            "20": 10.00
         }
     },
     {
@@ -90,9 +90,9 @@
         "ingredients": ["Banana", "Peanut Butter", "Cocoa Powder", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 20,
         "cost": {
-            "8oz": 4.50,
-            "12oz": 6.25,
-            "20oz": 9.00
+            "8": 4.50,
+            "12": 6.25,
+            "20": 9.00
         }
     },
     {
@@ -102,9 +102,9 @@
         "ingredients": ["Blueberries", "Acai Puree", "Banana", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 18,
         "cost": {
-            "8oz": 4.50,
-            "12oz": 6.25,
-            "20oz": 9.00
+            "8": 4.50,
+            "12": 6.25,
+            "20": 9.00
         }
     },
     {
@@ -114,9 +114,9 @@
         "ingredients": ["Carrot", "Orange", "Banana", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 15.5,
         "cost": {
-            "8oz": 4.00,
-            "12oz": 5.75,
-            "20oz": 8.00
+            "8": 4.00,
+            "12": 5.75,
+            "20": 8.00
         }
     }
 ]
