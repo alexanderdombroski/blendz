@@ -8,6 +8,7 @@ import MenuPage from './MenuPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutPage from './AboutPage';
+import { PreloadFonts } from './scripts/preload';
 
 // import writeData from './scripts/database';
 
@@ -24,6 +25,8 @@ function App() {
       link.as = 'image';
       link.href = `${process.env.PUBLIC_URL}/images/acai-ingredients.webp`
       document.head.appendChild(link)
+
+      PreloadFonts()
     }
   }, [location]);
 
