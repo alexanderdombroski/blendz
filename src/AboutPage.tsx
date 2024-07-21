@@ -1,7 +1,7 @@
 import { PreloadImages } from "./scripts/preload";
 
 function AboutPage() {
-    PreloadImages([`${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`]);
+    PreloadImages([`${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`, `${process.env.PUBLIC_URL}/images/restaurant.webp`]);
     
     return (
         <main className="About">
@@ -11,11 +11,11 @@ function AboutPage() {
             </div>
             
             <h2>Our Goals</h2>
-            <p>Welcome to Blendz, where we believe that a good tasting smoothie can make your day and give you the energy to do great things. Our ingredients are selected from producers who select the best products to make your smoothies extra fresh. We value quality service and strive to present you with the best smoothie experience you've ever had. We provide a wide range of customizations so you can always try something new.</p>
+            <p className="goals">Welcome to Blendz, where we believe that a good tasting smoothie can make your day and give you the energy to do great things. Our ingredients are selected from producers who select the best products to make your smoothies extra fresh. We value quality service and strive to present you with the best smoothie experience you've ever had. We provide a wide range of customizations so you can always try something new.</p>
 
             <h2>Location</h2>
             
-            <img src={`${process.env.PUBLIC_URL}/images/restaurant.jpg`} alt="" />
+            <img className="restraunt-img" src={`${process.env.PUBLIC_URL}/images/restaurant.webp`} alt="restaurant lobby table" />
 
             <h3>Address</h3>
             <div className="address">

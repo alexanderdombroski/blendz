@@ -8,7 +8,7 @@ import MenuPage from './MenuPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutPage from './AboutPage';
-import { PreloadFonts } from './scripts/preload';
+import { AddPreloadImageHMTL, PreloadFonts } from './scripts/preload';
 // import { doc } from 'firebase/firestore';
 
 // import writeData from './scripts/database';
@@ -21,18 +21,11 @@ function App() {
   const location = useLocation();
   useEffect(() => {
     if (location.pathname === '/') {
-      const link = document.createElement('link')
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = `${process.env.PUBLIC_URL}/images/acai-ingredients.webp`
-      document.head.appendChild(link)
+      AddPreloadImageHMTL(`${process.env.PUBLIC_URL}/images/acai-ingredients.webp`);
     }
     if (location.pathname === '/about') {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = `${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`;
-      document.head.appendChild(link)
+      AddPreloadImageHMTL(`${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`);
+      AddPreloadImageHMTL(`${process.env.PUBLIC_URL}/images/restaurant.webp`);
     }
     PreloadFonts()
   }, [location]);

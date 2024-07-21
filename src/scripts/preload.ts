@@ -3,6 +3,15 @@ import { useEffect } from "react";
 function PreloadImages(imagePaths: string[]) {
     useEffect(() => imagePaths.forEach(path => (new Image()).src = path), [imagePaths]);
 }
+
+function AddPreloadImageHMTL(imagepath: string) {
+    const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = imagepath;
+      document.head.appendChild(link);
+}
+
 function PreloadFonts() { // Function written by chatGPT on 7/20/24
     const preconnectGoogleFonts1 = document.createElement('link');
     preconnectGoogleFonts1.rel = 'preconnect';
@@ -32,4 +41,4 @@ function PreloadFonts() { // Function written by chatGPT on 7/20/24
 }
 
 
-export { PreloadImages, PreloadFonts }
+export { PreloadImages, PreloadFonts, AddPreloadImageHMTL }

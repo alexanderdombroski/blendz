@@ -1,4 +1,5 @@
 
+
 :root {
   /* change the values below to your colors from your palette */
   
@@ -296,8 +297,17 @@ footer a:hover {
     margin: 0 10%;
 }
 
+.goals {
+    min-height: 100px;
+}
+
 .address * {
     text-align: center;
+}
+
+.restraunt-img {
+    width: 250px;
+    height: 200px;
 }
 
 /* -------------------- Medium View -------------------- */
@@ -321,6 +331,10 @@ footer a:hover {
     }
     .smoothies li > .counter, .smoothies li > b {
         margin-left: auto;
+    }
+    .restraunt-img {
+        width: 500px;
+        height: 400px;
     }
 }
 
@@ -368,5 +382,11 @@ footer a:hover {
     
     .smoothies {
         grid-template-columns: 1fr;
+    }
+    
+    .goals {
+        min-height: 200px;
+        color: green;
+        box-sizing: border-box;
     }
 }
