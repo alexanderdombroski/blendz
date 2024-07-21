@@ -72,7 +72,7 @@ function MenuPage() {
                 <p>Total: ${getTotal(smoothieCart)}</p>
                 <button onClick={() => {
                     checkout(smoothieCart);
-                    setSmoothieCart([])
+                    setSmoothieCart([]);
                 }}
                 >Checkout</button>
             </div>
@@ -87,13 +87,13 @@ interface smoothieArgs {
 }
 
 function checkout(cart: smoothieArgs[]) {
-    const total = getTotal(cart)
+    const total = getTotal(cart);
     alert(`You spent $${total}! We'll keep your ${cart.length} smoothies cold for you until you pick them up.`)
     window.location.reload();
 }
 
 function getTotal(cart: smoothieArgs[]): string {
-    return cart.reduce((acc, s) => acc + s.price, 0).toFixed(2)
+    return cart.reduce((acc, s) => acc + s.price, 0).toFixed(2);
 }
 
 export default MenuPage;

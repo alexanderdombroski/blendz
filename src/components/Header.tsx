@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
     return (
         <header>
-            <a className="logo" href={`${process.env.PUBLIC_URL}/index.html`}><img src={`${process.env.PUBLIC_URL}/images/logo-transparent.webp`} alt="Blendz Logo"/></a>
+            <a className="logo" href={`${process.env.PUBLIC_URL}/index.html`}><img width={150} height={150} src={`${process.env.PUBLIC_URL}/images/logo-transparent.webp`} alt="Blendz Logo"/></a>
             <Nav/>
         </header>
     );
