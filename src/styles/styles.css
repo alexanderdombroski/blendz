@@ -3,7 +3,7 @@
   /* change the values below to your colors from your palette */
   
   --primary-color: #026E81;
-  --secondary-color: #00ABBD;
+  --secondary-color: #007BAD;
   --accent1-color: #FF9933;
   --accent2-color: #EEF8FF;
   --accent3-color: #5f3600;
@@ -91,13 +91,12 @@ nav ul {
     margin: 0;
 }
 
-.logo {
-    width: 150px;
-    margin-left: 20px;
+.logo, .logo img {
+    width: 150px;  height: 150px;
 }
 
-.logo img {
-    width: 150px;
+.logo {
+    margin-left: 20px;
 }
 
 nav a, nav a:visited {
@@ -259,11 +258,13 @@ footer a:hover {
 
 .ingredients img {
     width: 100px;
+    height: 100px;
 }
 
 .smoothies img {
     border: #5f3600 solid 2px;
     width: 200px;
+    height: 200px;
 }
 
 .card img:hover {
