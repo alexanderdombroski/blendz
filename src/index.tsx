@@ -9,6 +9,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutPage from './AboutPage';
 import { PreloadFonts } from './scripts/preload';
+// import { doc } from 'firebase/firestore';
 
 // import writeData from './scripts/database';
 
@@ -25,9 +26,15 @@ function App() {
       link.as = 'image';
       link.href = `${process.env.PUBLIC_URL}/images/acai-ingredients.webp`
       document.head.appendChild(link)
-
-      PreloadFonts()
     }
+    if (location.pathname === '/about') {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = `${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`;
+      document.head.appendChild(link)
+    }
+    PreloadFonts()
   }, [location]);
 
   return (

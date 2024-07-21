@@ -1,9 +1,12 @@
+import { PreloadImages } from "./scripts/preload";
 
 function AboutPage() {
+    PreloadImages([`${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`]);
+    
     return (
         <main className="About">
             <div className='hero'>
-              <img src={`${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.jpg`} alt="rows of smoothies hero" />
+              <img src={`${process.env.PUBLIC_URL}/images/smoothie/smoothie-row.webp`} alt="rows of smoothies hero" />
               <h1>About Us</h1>
             </div>
             
