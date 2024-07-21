@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './styles/styles.css';
 import App from './App';
 import reportWebVitals from './scripts/reportWebVitals';
@@ -14,6 +14,19 @@ import AboutPage from './AboutPage';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const location = useLocation();
+
+useEffect(() => {
+  if (location.pathname === '/') {
+    const link = document.createElement('link')
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = `${process.env.PUBLIC_URL}/images/acai-ingredients.webp`
+    document.head.appendChild(link)
+  }
+}, [location]);
+
 root.render(
   <React.StrictMode>
     <Header/>

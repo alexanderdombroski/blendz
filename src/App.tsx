@@ -2,9 +2,12 @@ import React from 'react';
 import './styles/App.css';
 import { PageSummary } from './components/PageSummary';
 import getSpecial from './scripts/special';
+import { preloadImages } from './scripts/preload';
 
 
 function App() {
+  preloadImages([`${process.env.PUBLIC_URL}/images/acai-ingredients.webp`])
+
   return (
     <main className="App">
         <div className='hero'>
