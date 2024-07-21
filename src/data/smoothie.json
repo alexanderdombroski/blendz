@@ -62,7 +62,7 @@
     {
         "id": 6,
         "name": "Avocado Smoothie",
-        "image": "images/smoothie/avocado-banana-smoothie.webp",
+        "image": "images/smoothie/avocado-banana-smoothie.png",
         "ingredients": ["Avocado", "Banana", "Spinach", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 20,
         "cost": {
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "name": "Blueberry Acai Smoothie",
-        "image": "images/smoothie/blueberry-smoothie.webp",
+        "image": "images/smoothie/blueberry-smoothie.png",
         "ingredients": ["Blueberries", "Acai Puree", "Banana", "Greek Yogurt", "Almond Milk", "Honey"],
         "averageCaloriesPerOz": 18,
         "cost": {
