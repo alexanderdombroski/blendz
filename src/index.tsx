@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './styles/styles.css';
-import App from './App';
+import HomePage from './HomePage';
 import reportWebVitals from './scripts/reportWebVitals';
 import MenuPage from './MenuPage';
 import Header from './components/Header';
@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-(function Preload() {
+function App() {
   const location = useLocation();
   useEffect(() => {
     if (location.pathname === '/') {
@@ -26,19 +26,25 @@ const root = ReactDOM.createRoot(
       document.head.appendChild(link)
     }
   }, [location]);
-})();
+
+  return (
+    <div className='App'>
+      <Header/>
+        <Routes>
+          <Route path="/" Component={HomePage} />
+          <Route path="/menu" Component={MenuPage} />
+          <Route path="/about" Component={AboutPage} />
+        </Routes> 
+      <Footer/>
+    </div>
+  )
+}
 
 root.render(
   <React.StrictMode>
-    <Header/>
     <Router>
-      <Routes>
-        <Route path="/" Component={App} />
-        <Route path="/menu" Component={MenuPage} />
-        <Route path="/about" Component={AboutPage} />
-      </Routes>
+      <App/>
     </Router>
-    <Footer/>
   </React.StrictMode>
 );
 

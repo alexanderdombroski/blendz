@@ -5,11 +5,11 @@ import getSpecial from './scripts/special';
 import { PreloadImages } from './scripts/preload';
 
 
-function App() {
+function HomePage() {
   PreloadImages([`${process.env.PUBLIC_URL}/images/acai-ingredients.webp`])
 
   return (
-    <main className="App">
+    <main className="HomePage">
         <div className='hero'>
           <img src={`${process.env.PUBLIC_URL}/images/acai-ingredients.webp`} alt="acai ingredients hero" />
           <h1>Blendz</h1>
@@ -23,4 +23,4 @@ function App() {
 
 
 
-export default App;
+export default HomePage;
