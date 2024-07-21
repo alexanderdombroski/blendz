@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 import smoothies from "./data/smoothie.json"
 import ingredients from "./data/ingredients.json"
 import { smoothieCard, ingredientCard } from "./components/MenuCards";

@@ -2,11 +2,11 @@ import React from 'react';
 import './styles/App.css';
 import { PageSummary } from './components/PageSummary';
 import getSpecial from './scripts/special';
-import { preloadImages } from './scripts/preload';
+import { PreloadImages } from './scripts/preload';
 
 
 function App() {
-  preloadImages([`${process.env.PUBLIC_URL}/images/acai-ingredients.webp`])
+  PreloadImages([`${process.env.PUBLIC_URL}/images/acai-ingredients.webp`])
 
   return (
     <main className="App">

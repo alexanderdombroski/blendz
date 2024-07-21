@@ -15,17 +15,18 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const location = useLocation();
-
-useEffect(() => {
-  if (location.pathname === '/') {
-    const link = document.createElement('link')
-    link.rel = 'preload';
-    link.as = 'image';
-    link.href = `${process.env.PUBLIC_URL}/images/acai-ingredients.webp`
-    document.head.appendChild(link)
-  }
-}, [location]);
+(function Preload() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === '/') {
+      const link = document.createElement('link')
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = `${process.env.PUBLIC_URL}/images/acai-ingredients.webp`
+      document.head.appendChild(link)
+    }
+  }, [location]);
+})();
 
 root.render(
   <React.StrictMode>
