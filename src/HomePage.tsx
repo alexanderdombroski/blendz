@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/App.css';
 import { PageSummary } from './components/PageSummary';
 import getSpecial from './scripts/special';
 import { PreloadImages } from './scripts/preload';
