@@ -7,7 +7,7 @@ function Counter() {
 
     return (
         <div className="counter">
-            <button onClick={() => setCount(count - 1)}>-</button>
+            <button onClick={() => setCount(count === 0 ? 0 : count - 1)}>-</button>
             <p>{count}</p>
             <button onClick={() => setCount(count + 1)}>+</button>
         </div>
