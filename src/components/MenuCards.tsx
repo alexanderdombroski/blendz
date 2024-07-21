@@ -19,6 +19,12 @@ function ingredientCard(ingredient: ingredient) {
     );
 }
 
+interface smoothieCardArgs {
+    smoothie: smoothie,
+    addCallback: Function,
+    subtractCallback: Function
+}
+
 interface smoothie {
     id: number,
     name: string,
@@ -33,17 +39,17 @@ interface smoothie {
 }
 
 
-function smoothieCard(smoothie: smoothie) {
+function smoothieCard({smoothie, addCallback, subtractCallback}: smoothieCardArgs) {
     return (
         <div className="card" key={smoothie["id"]}>
             <h3>{smoothie["name"]}</h3>
             <img src={`${process.env.PUBLIC_URL}${smoothie["image"]}`} alt={smoothie["name"]} />
             <ul>
                 {
-                    Object.entries(smoothie.cost).map(([k, v]) => 
+                    Object.entries(smoothie["cost"]).map(([k, v]) => 
                         <li key={k}>
                             <b>{k} oz: </b> ${v.toFixed(2)}  ({Number.parseInt(k)*smoothie["averageCaloriesPerOz"]} cal)
-                            <Counter/>
+                            <Counter addCallback={() => addCallback({name: smoothie["name"], price: v})} subtractCallback={() => subtractCallback({name: smoothie["name"], price: v})}/>
                         </li>
                     )
                 }
@@ -60,5 +66,6 @@ function addBorder(event: React.MouseEvent<HTMLDivElement>) {
         target.style.borderColor = (currentBorder === "black") ? "#EEF8FF" : "black"
     }
 }
+
 
 export { smoothieCard, ingredientCard }

@@ -115,6 +115,7 @@ footer {
     align-items: center;
     padding: 20px;
     height: 100px;
+    margin-top: 50px;
 }
 
 footer p, footer > a, footer a:visited {
@@ -283,6 +284,10 @@ footer a:hover {
 .smoothies li {
     max-width: 300px;
     margin: 0 auto;
+}
+
+.cart p, .section p {
+    text-align: center;
 }
 
 /* ---------------------------------------- About Page ---------------------------------------- */
