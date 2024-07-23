@@ -1,7 +1,7 @@
 # Local files
 paint-docs/
 node_modules
-
+firestoreSetup/blendz-firestore-admin-sdk.json
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
