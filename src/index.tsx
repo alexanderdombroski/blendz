@@ -2,16 +2,16 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './styles/styles.css';
-import HomePage from './HomePage';
 import reportWebVitals from './scripts/reportWebVitals';
+
+import HomePage from './HomePage';
 import MenuPage from './MenuPage';
+import ContactPage from './ContactPage';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutPage from './AboutPage';
 import { AddPreloadImageHMTL, PreloadFonts } from './scripts/preload';
-// import { doc } from 'firebase/firestore';
-
-// import writeData from './scripts/database';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -37,6 +37,7 @@ function App() {
           <Route path="/" Component={HomePage} />
           <Route path="/menu" Component={MenuPage} />
           <Route path="/about" Component={AboutPage} />
+          <Route path="/contact" Component={ContactPage} />
         </Routes> 
       <Footer/>
     </div>

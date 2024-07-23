@@ -105,7 +105,8 @@ nav a, nav a:visited {
 }
 
 nav a {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    text-wrap: nowrap;
 }
 
 nav a:hover {
