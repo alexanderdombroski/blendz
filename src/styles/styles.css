@@ -60,14 +60,18 @@ li {
     list-style-type: none;
 }
 
-button {
+button, input[type="submit"] {
     border-radius: 5px;
     background-color: var(--accent3-color);
     color: var(--headline-color-on-color);
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
     color: var(--nav-hover-link-color);
+}
+
+label {
+    display: block;
 }
 
 /* -------------------- Header -------------------- */
@@ -315,6 +319,57 @@ footer a:hover {
     height: 200px;
 }
 
+/* ---------------------------------------- Contact Page ---------------------------------------- */
+
+#rating-form {
+    margin: 0 auto;
+    text-align: left;
+    width: 200px;
+    padding: 50px 20%;
+    border: 3px solid var(--accent3-color);
+    border-radius: 30px;
+    background-color: var(--accent1-color);
+}
+
+#rating-form textarea, #rating-form input {
+    width: 100%;
+}
+
+#review {
+    height: 4em;
+}
+
+#rating-form label {
+    margin: 15px 0 5px 0;
+}
+
+#rating-stars {
+    text-align: center;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rating-stars span {
+    font-size: 2em;
+}
+
+#rating-stars span:hover {
+    color: var(--primary-color);
+    text-decoration: bold;
+}
+
+.review {
+    margin-top: 50px;
+}
+
+.review p {
+    text-align: center;
+}
+
+
+
 /* -------------------- Medium View -------------------- */
 
 @media screen and (min-width: 560px) {
@@ -366,6 +421,10 @@ footer a:hover {
     
     .smoothies {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
