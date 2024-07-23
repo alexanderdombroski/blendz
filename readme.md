@@ -6,7 +6,7 @@ I hope to eventually expand the website to send receipts via email after a purch
 
 The [site](https://blendz.vercel.app/) is hosted on vercel. The database updates will come live very soon, but for now they can be viewed in a demo video.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/kcNyi2aw8aQ)
 
 # Development Environment
 
