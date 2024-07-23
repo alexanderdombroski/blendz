@@ -1,32 +1,34 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+I chose to do an e-commerce website because it is easily expandable to many different skills of web development. I've improved at React, managing state, dynamically loading in data, TypeScript. I've learned how to pull smoothie data and ingredients from a Firebase database.
 
-{Provide a description of the software that you wrote.}
+I hope to eventually expand the website to send receipts via email after a purchase and allow the user to build a custom smoothie. 
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
+The [site](https://blendz.vercel.app/) is hosted on vercel. The database updates will come live very soon, but for now they can be viewed in a demo video.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+**Programming Languages and Libraries**
+* HTML/JSX
+* CSS
+* TypeScript
+* React
 
-{Describe the programming language that you used and any libraries.}
+**Services**
+* Firebase Firestore database
+* Vercel (NextJS)
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Vercel](https://vercel.com/)
+- [Firebase--Getting Started](https://firebase.google.com/docs/functions/get-started?gen=2nd)
+- [Firestore docs](https://firebase.google.com/docs/firestore)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Build a smoothie
+- Improved Checkout experience (and email reciepts)
+- Login through Google
+- Admin Page (with security)
