@@ -1,7 +1,7 @@
 // Firebase
 import { initializeApp } from "firebase/app"
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore, getDoc, doc } from "firebase/firestore"
+import { getFirestore, getDocs, collection } from "firebase/firestore"
 
 
 const firebaseApp = initializeApp({
@@ -21,4 +21,17 @@ function writeData(): void {
     console.log(data);
 }
 
-export default writeData;
+export interface fireObj {
+    [key: string]: any
+}
+
+async function queryCollection(name: string): Promise<fireObj[]> {
+    const collectionRef = collection(db, name);
+    const querySnapshot = await getDocs(collectionRef);
+
+    const documents = querySnapshot.docs.map(doc => ({id: doc.id, ...doc.data()}));
+    
+    return documents
+}
+
+export { queryCollection };

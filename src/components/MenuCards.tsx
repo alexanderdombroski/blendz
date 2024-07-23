@@ -1,6 +1,6 @@
 import Counter from "./Counter"
 
-interface ingredient {
+export interface ingredient {
     id: number,
     name: string,
     image: string
@@ -25,7 +25,7 @@ interface smoothieCardArgs {
     subtractCallback: Function
 }
 
-interface smoothie {
+export interface smoothie {
     id: number,
     name: string,
     image: string,
