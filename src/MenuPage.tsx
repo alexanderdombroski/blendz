@@ -1,22 +1,22 @@
-import { useState } from "react";
-import smoothies from "./data/smoothie.json"
-import ingredients from "./data/ingredients.json"
-import { smoothieCard, ingredientCard } from "./components/MenuCards";
-
+import { useState, useEffect } from "react";
+import { smoothieCard, ingredientCard, smoothie, ingredient } from "./components/MenuCards";
+import { queryCollection, fireObj } from "./scripts/database";
 
 function MenuPage() {
+    // Active Sections for ingredient borders
     const [activeSection, setActiveSection] = useState<string | null>(null);
-
+    
     const toggleSection = (sectionName: string | null) => {
         setActiveSection(prevSection => (prevSection === sectionName ? prevSection : sectionName));
     };
-    
+
+
+    // Shopping Cart State management
     const [smoothieCart, setSmoothieCart] = useState<smoothieArgs[]>([]);
 
     function addSmoothie(smoothie: smoothieArgs): void {
         setSmoothieCart([...smoothieCart, smoothie]);
     }
-    
     function removeSmoothie(smoothie: smoothieArgs): void {
         const i = smoothieCart.findIndex(s => s.name === smoothie.name && s.price === smoothie.price);
         if (i !== -1) {
@@ -25,6 +25,18 @@ function MenuPage() {
             setSmoothieCart(newCart);
         }
     }
+
+    // Loading smoothies and ingredients
+    const [smoothies, setSmoothies] = useState<fireObj[]>([]);
+    const [ingredients, setIngredients] = useState<fireObj[]>([]);
+    useEffect(() => { (async () => {
+            setSmoothies(await queryCollection("smoothies"));
+        })();
+    }, []);
+    useEffect(() => { (async () => {
+            setIngredients(await queryCollection("ingredients"));
+        })();
+    }, []);
 
     return (
         <main className="Menu">
@@ -42,7 +54,7 @@ function MenuPage() {
                 <h2>Build Your Own Smoothie</h2>
                 <p><i>Feature coming very soon!</i></p>
                 <div className="ingredients">
-                    {ingredients["ingredient"].map((i => ingredientCard(i)))}
+                    {(ingredients as ingredient[]).map((i => ingredientCard(i)))}
                 </div>
                 
             </div>
@@ -52,7 +64,7 @@ function MenuPage() {
             <div className="section">
                 <h2>Specialty Smoothies</h2>
                 <div className="smoothies">
-                    {smoothies.map(smoothie => smoothieCard({
+                    {(smoothies as smoothie[]).map(smoothie => smoothieCard({
                         smoothie: smoothie,
                         addCallback: addSmoothie,
                         subtractCallback: removeSmoothie
